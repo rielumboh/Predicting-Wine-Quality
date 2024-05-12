@@ -4,8 +4,7 @@ import pandas as pd
 import pickle
 
 #Load the model
-with open('wine_svm_final.pkl', 'rb') as load_file:
-    load_model = pickle.load(load_file)
+load_model = pickle.load(open('wine_svm_final.pkl', 'rb'))
 
 st.title('Simple Red Wine Quality Prediction 🍷')
 st.subheader('Please define your parameter below:')
