@@ -2,6 +2,8 @@ import streamlit as st
 import numpy as np
 import pandas as pd
 import pickle
+from sklearn.preprocessing import PowerTransformer
+from sklearn.svm import SVC
 
 #Load the model
 load_model = pickle.load(open('wine_svm_final.pkl', 'rb'))
